@@ -1,0 +1,116 @@
+/* General styles */
+.App {
+  text-align: center;
+}
+
+/* Movie selection styles */
+.movie-selection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.movie {
+  align-items: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.movie-poster {
+  border-radius: 20px;
+  height: 300px;
+}
+
+.movie-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Screen selection styles */
+.screen-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.screen:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.screen.selected {
+  background-color: #f0f0ff; /* Changed background color for selected screen */
+  color: black;
+}
+
+.screen:not(.available):not(.selected) {
+  background-color: #f0f0ff; /* Changed background color for unavailable screen */
+  color: #444;
+  cursor: not-allowed;
+}
+
+.screen-number {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.screen-time {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+/* Seat selection styles */
+.screen-seats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.seat {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.seat.selected {
+  background-color: green; /* Changed background color for selected seat */
+  color: white;
+}
+
+.seat:not(.available):not(.selected) {
+  background-color: darkgrey;
+  color: #444;
+  cursor: not-allowed;
+}
+
+.Payment-button{
+  margin-top: 1rem;
+  padding: 0.rem 1rem;
+  background-color: aqua;
+  color: #f0f0ff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition:all 0.2s ;
+}
+.Payment-button:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.Payment-button:disabled{
+  cursor:not-allowed
+}
